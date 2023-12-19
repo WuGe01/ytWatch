@@ -8,7 +8,7 @@
 
         @vite('resources/css/app.css')
     </head>
-    <body>
+    <body class="h-100">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Watch TY</a>
@@ -29,7 +29,10 @@
         </nav>
 
 
-        
+        <div class="text-bg-secondary">
+
+        </div>
+
         @vite('resources/js/app.js')
     </body>
 </html>
