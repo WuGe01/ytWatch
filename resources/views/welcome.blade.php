@@ -8,22 +8,24 @@
 
         @vite('resources/css/app.css')
     </head>
-    <body class="h-100 bg-dark-subtle">
+    <body class="vh-100 bg-dark-subtle">
         @include('layout.header')
 
 
-        <div class="text-bg-secondary">
-            <form action="" method="post">
-                <div class="input-group flex-nowrap">
-                    <span class="input-group-text">帳號</span>
-                    <input type="text" class="form-control" placeholder="帳號" aria-label="Username">
-                </div>
-
-                <div class="input-group flex-nowrap">
-                    <span class="input-group-text">密碼</span>
-                    <input type="password" class="form-control" placeholder="密碼" aria-label="Username">
-                </div>
-            </form>
+        <div class="text-bg-secondary d-flex justify-content-center h-90">
+            <div>
+                <form action="" method="post">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text">帳號</span>
+                        <input type="text" class="form-control" placeholder="帳號" aria-label="Username">
+                    </div>
+    
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text">密碼</span>
+                        <input type="password" class="form-control" placeholder="密碼" aria-label="Username">
+                    </div>
+                </form>
+            </div>
         </div>
 
 
