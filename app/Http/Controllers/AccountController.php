@@ -33,6 +33,11 @@ class AccountController extends Controller
 
     public function registerShow()
     {
+        return view('register');
+    }
+
+    public function register(Request $request)
+    {
         return '註冊';
     }
 }

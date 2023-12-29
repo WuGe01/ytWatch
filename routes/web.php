@@ -15,10 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'show'])->middleware('checkloggedin');
+Route::get('/', [HomeController::class, 'show'])->name('default')->middleware('checkloggedin');
 Route::get('/home', [HomeController::class, 'show'])->name('home')->middleware('checkloggedin');
 
 Route::get('/login', [AccountController::class, 'show'])->name('login');
 Route::post('/login', [AccountController::class, 'login'])->name('postLogin');
+
 Route::get('/logout', [AccountController::class, 'logout'])->name('logout');
+
 Route::get('/register', [AccountController::class, 'registerShow'])->name('register');
+Route::post('/register', [AccountController::class, 'register'])->name('postRegister');
