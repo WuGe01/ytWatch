@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Account;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class AccountController extends Controller
@@ -58,7 +57,7 @@ class AccountController extends Controller
         $account->account = $request->account;
         $account->name = $request->name;
         $account->email = $request->email;
-        $account->password = Hash::make($request->password);
+        $account->password = $request->password;
         $account->save();
 
         return redirect('login');
