@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,8 @@ use App\Http\Controllers\AccountController;
 |
 */
 
-Route::get('/', [HomeController::class, 'show'])->name('home')->middleware('checkloggedin');
+Route::get('/', [HomeController::class, 'show'])->middleware('checkloggedin');
+Route::get('/home', [HomeController::class, 'show'])->name('home')->middleware('checkloggedin');
 
 Route::get('/login', [AccountController::class, 'show'])->name('login');
+Route::post('/login', [AccountController::class, 'login'])->name('postLogin');

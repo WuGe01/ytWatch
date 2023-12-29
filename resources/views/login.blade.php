@@ -9,7 +9,7 @@
                 Watch YT
               </div>
             <div class="card-body">
-                <form action="" method="post">
+                <form action="{{ route("postLogin") }}" method="post">
                     @csrf
                     <div class="form-floating m-2">
                         <input type="text" class="form-control" name="account" placeholder="帳號"
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="m-2 d-flex justify-content-between">
-                        <button type="button" class="btn btn-outline-primary">登入</button>
+                        <input  type="submit" class="btn btn-outline-primary" value="登入">
                         <a type="button" href="" class="btn btn-outline-secondary">註冊</a>
                     </div>
                 </form>
