@@ -23,4 +23,16 @@ class AccountController extends Controller
 
         return redirect()->back()->withErrors(['account' => 'The provided credentials do not match our records.']);
     }
+
+    public function logout()
+    {
+        Auth::guard('account')->logout();
+
+        return redirect('login');
+    }
+
+    public function registerShow()
+    {
+        return '註冊';
+    }
 }

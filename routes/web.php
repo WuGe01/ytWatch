@@ -20,3 +20,5 @@ Route::get('/home', [HomeController::class, 'show'])->name('home')->middleware('
 
 Route::get('/login', [AccountController::class, 'show'])->name('login');
 Route::post('/login', [AccountController::class, 'login'])->name('postLogin');
+Route::get('/logout', [AccountController::class, 'logout'])->name('logout');
+Route::get('/register', [AccountController::class, 'registerShow'])->name('register');
