@@ -18,7 +18,7 @@ class AccountController extends Controller
         $password = $request->input('password');
 
         if (Auth::guard('account')->attempt(['account' => $account, 'password' => $password])) {
-            return redirect()->intended('home');
+            return redirect('home');
         }
 
         return redirect()->back()->withErrors(['account' => 'The provided credentials do not match our records.']);
