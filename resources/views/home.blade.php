@@ -8,12 +8,6 @@
     <title>Watch YT</title>
 
     @vite('resources/css/app.css')
-
-    <style>
-        .h-body {
-            height: calc(100vh - 80px);
-        }
-    </style>
 </head>
 
 <body class="vh-100 bg-dark-subtle">
