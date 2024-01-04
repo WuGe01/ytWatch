@@ -23,6 +23,10 @@
                         <label for="Password">密碼 password</label>
                     </div>
 
+                    <div class="m-2">
+                        <a href="{{ route("password.forget") }}">忘記密碼？</a>
+                    </div>
+
                     <div class="m-2 d-flex justify-content-between">
                         <input  type="submit" class="btn btn-outline-primary" value="登入">
                         <a type="button" href="{{ route("register") }}" class="btn btn-outline-secondary">註冊</a>
