@@ -26,6 +26,16 @@
                         <label for="password_confirmation">確認密碼 password confirmation</label>
                     </div>
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <div class="m-2 d-flex justify-content-between">
                         <input  type="submit" class="btn btn-outline-primary" value="確認">
                     </div>

@@ -23,6 +23,16 @@
                         <label for="Password">密碼 password</label>
                     </div>
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <div class="m-2">
                         <a href="{{ route("password.forget") }}">忘記密碼？</a>
                     </div>

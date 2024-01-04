@@ -17,6 +17,16 @@
                         <label for="email">信箱 email</label>
                     </div>
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <div class="m-2 d-flex justify-content-between">
                         <input  type="submit" class="btn btn-outline-primary" value="發送">
                     </div>
