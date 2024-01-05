@@ -40,7 +40,7 @@
                     @endif
 
                     <div class="m-2 d-flex justify-content-between">
-                        <input  type="submit" class="btn btn-outline-primary" value="發送">
+                        <input  type="submit" class="btn btn-outline-primary" value="修改">
                     </div>
                 </form>
             </div>
