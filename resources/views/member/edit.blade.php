@@ -9,7 +9,7 @@
                 Watch YT 修改會員資輛
             </div>
             <div class="card-body">
-                <form action="{{ route("member.edit") }}" method="post">
+                <form action="{{ route("member.edit") }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-floating m-2">
                         <input type="text" class="form-control" name="name" placeholder="名稱"
