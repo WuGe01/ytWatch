@@ -6,7 +6,7 @@
     <div class="h-100 d-flex justify-content-center align-items-center">
         <div class="card" style="width: 30rem;">
             <div class="card-header">
-                Watch YT 修改會員資輛
+                Watch YT 修改會員資料
             </div>
             <div class="card-body">
                 <form action="{{ route("member.edit") }}" method="post" enctype="multipart/form-data">
